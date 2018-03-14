@@ -22,4 +22,4 @@ country = raw_input("Given the opportunity, what country would you live in? ")
 dessert = raw_input("What is your favorite dessert? ")
 year = raw_input("What year were you born? ")
 
-print STORY % (name, adj_1, adj_2, animal, food, verb, n1, fruit, adj_3, name, hero, name, country, name, dessert, name, year, n2)
+print(STORY) % (name, adj_1, adj_2, animal, food, verb, n1, fruit, adj_3, name, hero, name, country, name, dessert, name, year, n2)
