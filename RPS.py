@@ -1,14 +1,17 @@
 #Plays Rock/Paper/Scissors
 from random import randint
 
+#Player options for RPS
 options = ["ROCK", "PAPER", "SCISSORS"]
 
+#Win/Lose/Tie condition responses
 message = {
   "tie": "Yawn it's a tie!",
   "won" : "Yay you won!",
   "lost" : "Aww you lost!"
 }
 
+#Shows player choice, computer choice, determines winner and prints condition response
 def decide_winner(user_choice, computer_choice):
   print("You selected %s." % user_choice)
   print("The computer selected %s." % computer_choice)
@@ -23,6 +26,7 @@ def decide_winner(user_choice, computer_choice):
   else:
     print(message["lost"])
 
+#Prompts player for choice, forces input to UPPER, selects computer choice and picks winner
 def play_RPS():
   user_choice = input("Enter Rock, paper or scissors: ")
   user_choice = user_choice.upper()
