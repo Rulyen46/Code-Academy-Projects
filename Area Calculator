@@ -2,12 +2,16 @@
 
 from time import sleep
 
+#Prompts user to select a given shape to calculate
+
 print("The calculator is now starting!")
 option = input("""Please select a shape:
 triangle, circle, trapezoid, square, diamond
 or rectangle: """)
 
 option = option.upper()
+
+#Prompts user for applicable measurements for each different shape, then calculates area
 
 if option == "CIRCLE" or option == "C":
   radius = float(input("Please enter the radius: "))
