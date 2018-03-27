@@ -2,10 +2,12 @@
 from random import randint
 from time import sleep
 
+#Prompts user for a guess and stores the integer in a variable.
 def get_user_guess():
   guess = int(raw_input("Please pick a number: "))
   return guess
 
+#Rolls two dice, displays the values, then determines winner by highest number.
 def roll_dice(number_of_sides):
   first_roll = randint(1, number_of_sides)
   second_roll = randint(1, number_of_sides)
