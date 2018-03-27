@@ -3,51 +3,53 @@
 from time import sleep
 
 print("The calculator is now starting!")
-option = raw_input("""Please select a shape:
+option = input("""Please select a shape:
 triangle, circle, trapezoid, square, diamond
 or rectangle: """)
+
 option = option.upper()
+
 if option == "CIRCLE" or option == "C":
-  radius = float(raw_input("Please enter the radius: "))
+  radius = float(input("Please enter the radius: "))
   area = 3.14159 * radius ** 2
   print("I am calculating the answer...")
   sleep(2)
-  print("The area is %s!") % (area)
+  print("The area is %s!" % area)
 elif option == "TRIANGLE" or option == "T":
-  base = float(raw_input("Please enter the length of the base: "))
-  height = float(raw_input("Please enter the height of the triangle: "))
+  base = float(input("Please enter the length of the base: "))
+  height = float(input("Please enter the height of the triangle: "))
   area = .5 * base * height
   print("I am calculating the answer...")
   sleep(2)
-  print("The area is %s!") % (area)
+  print("The area is %s!" % area)
 elif option == 'TRAPEZOID':
-  base1 = float(raw_input("Please enter the top base length: "))
-  base2 = float(raw_input("Please enter the bottom base length: "))
-  height = float(raw_input("Please enter the height of the trapezoid: "))
+  base1 = float(input("Please enter the top base length: "))
+  base2 = float(input("Please enter the bottom base length: "))
+  height = float(input("Please enter the height of the trapezoid: "))
   hbase = base1 + base2
   area = hbase / 2 * height
   print("I am calculating the answer...")
   sleep(2)
-  print("The area is %s!") % (area)
+  print("The area is %s!" % area)
 elif option == "SQUARE" or option == "S":
-  side = float(raw_input("Please enter the length of the side: "))
+  side = float(input("Please enter the length of the side: "))
   area = side ** 2
-  print("The area is %s!") % (area)
+  print("The area is %s!" % area)
 elif option == "RECTANGLE" or option == "R":
-  length = float(raw_input("Please enter the length: "))
-  width = float(raw_input("Please enter the width: "))
+  length = float(input("Please enter the length: "))
+  width = float(input("Please enter the width: "))
   area = length * width
   print("I am calculating the answer...")
   sleep(2)
-  print("The area is %s!") % (area)
+  print("The area is %s!" % area)
 elif option == "DIAMOND" or option == "D":
-  d1 = float(raw_input("Please enter the length of the first diagonal: "))
-  d2 = float(raw_input("Please enter the length of the second diagonal: "))
+  d1 = float(input("Please enter the length of the first diagonal: "))
+  d2 = float(input("Please enter the length of the second diagonal: "))
   inside = d1 * d2
   area = inside / 2
   print("I am calculating the answer...")
   sleep(2)
-  print("The area is %s!") % (area)
+  print("The area is %s!" % area)
 else:
   print("""That is not a valid option. Please select 
   a valid shape.""")
